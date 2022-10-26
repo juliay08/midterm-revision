@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Fanwood+Text:ital@0;1&family=Inter:wght@400;500;600&family=Luckiest+Guy&family=Poppins:wght@400;500;600&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+
+body, html {
+  margin: 0;
+  height: 100%;
+  text-align: center;
+  font-family: 'Ubuntu';
+  font-size: 18px;
+  background-color: #ffa701;
+}
+
+.arrowDown {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  pointer-events: none;
+}
+
+.arrowDown img {
+  height: 100px;
+}
+
+.heroSection {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("pikachu.gif");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75%;
+  position: relative;
+  padding-top: 220px;
+}
+
+.heroTitle {
+  margin: 0;
+  padding: 0;
+  font-family: 'Luckiest Guy';
+  font-size: 80px;
+  color: white;
+}
+
+.heroTitle h1 {
+  font-size: 80px;
+  margin: 0;
+}
+
+.heroBlurb {
+  margin: 0% 25% 0% 25%;
+  font-family: 'Ubuntu';
+  font-size: 20px;
+  color: white;
+}
+
+.collabHeader {
+  font-size: 32px;
+  color: #0055b3;
+  font-family: 'Luckiest Guy';
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.title {
+  display: flex;
+  float: left;
+  width: 50%;
+  height: 1150px;
+  background-position: center;
+  font-size: 48px;
+  align-items: center;
+  justify-content: center;
+}
+
+#titleAdidas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("adidasbackground.jpg");
+  font-family: 'Poppins';
+  color:white;
+}
+
+#titleBalmain {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("balmainbackground.jpg");
+  font-family: 'Inter';
+  color: white;
+}
+
+#titleGucci {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("guccibackground.jpg");
+  font-family: 'Fanwood Text';
+  color: white;
+}
+
+#titleBearbricks {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("bearbricksbackground.jpg");
+  font-family: 'Bungee Shade';
+  color: white;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  height: 1150px;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.info p {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  line-height: 1.6;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.imageWrapper {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.imageWrapper img {
+  height: 100%;
+}
+
+img {
+  transition: transform .5s;
+}
+
+img:hover {
+  transition: transform .5s;
+  transform: scale(1.1);
+}
+
+#infoAdidas {
+  background-color: #0171bb;
+  color: white;
+}
+
+#infoBalmain {
+  background-color: black;
+  color: white;
+}
+
+#infoGucci {
+  background-color: #bca585;
+  color: black;
+}
+
+#infoBearbricks {
+  background-color: #fec6c7;
+  color: black;
+}
+
+.button {
+  background-color: #3b4cca;
+  padding: 20px 30px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  margin: 30px;
+  border-radius: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+/*button animation - used w3schools (https://www.w3schools.com/howto/howto_css_animate_buttons.asp) for reference*/
+.button span {
+  position: relative; /*places the element relative to its current position without changing the layout around it*/
+  transition: 0.4s; /*hover animation/transition effect spans over 0.4 seconds */
+}
+
+.button span:after {
+  content: '\00bb'; /*this is the css entity for right-pointing double angle quotation mark*/
+  position: absolute; /*this type of positioning allows me to set the location as I define it*/
+  opacity: 0; /*this changes the opacity of the arrows to not be seen when the button is not being hovered over yet*/
+  right: -10px; /*this defines the position in which the arrows appear/come in from*/
+  transition: 0.4s; /*hover animation disappearing effect spans over 0.4s*/
+}
+
+.button:hover span {
+  padding-right: 20px; /*this defines the padding that is applied between the text of the button and the arrows*/
+}
+
+.button:hover span:after {
+  opacity: 1; /*this allows the arrows to appear in full opacity when the button is being hovered over*/
+  right: 0; /*this allows the button to return back to normal appearance when hovered off*/
+}
+
+.footer {
+  background-color: #3b4cca;
+}
+
+.footerLinks {
+  padding: 4%;
+}
+
+.footerLinks a {
+  color: white;
+}
+
+.footerLinks a:visited {
+  color: #bebebe;
+}
